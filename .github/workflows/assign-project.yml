@@ -15,5 +15,5 @@ jobs:
     steps:
       - uses: srggrs/assign-one-project-github-action@1.2.1
         with:
-          project: 'https://github.com/cse110-sp21-group10/cse110-sp21-group10/projects/1'
+          project: 'https://github.com/praneetbhoj/github-actions-for-ci/projects/1'
 #         column-name defaults to 'To Do' for issues and 'In Progress' for pull requests
