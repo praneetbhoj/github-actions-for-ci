@@ -1,4 +1,10 @@
 export default class Game {
+  /**
+   * Represents a game board
+   * @constructor
+   * @param {Object} p1 - Player 1
+   * @param {Object} p2 - Player 2
+   */
   constructor (p1, p2) {
     this.p1 = p1
     this.p2 = p2
@@ -6,7 +12,13 @@ export default class Game {
     this.player = Math.random() < 0.5 ? this.p1 : this.p2
     this.sym = 'X'
   }
-
+  
+  /**
+   * This is a test of JSDocs documentation generation. This function changes the game board at a given row,column.
+   * @function
+   * @param {int} row - The row number on the board
+   * @param {int} col - The column number on the board
+   */
   turn (row, col) {
     col = col || row
     this.board[row][col] = this.sym
