@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Auto generate documentation from JSDocs
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Generate documentation
         uses: andstor/jsdoc-action@v1
         with:
