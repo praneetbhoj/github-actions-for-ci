@@ -16,9 +16,8 @@ jobs:
       - name: Generate documentation
         uses: andstor/jsdoc-action@v1
         with:
-          source_dir: ./src
+          source_dir: ./src/
           recurse: true
-          output_dir: ./documentation
-          config_file: conf.json
+          output_dir: ./documentation/
           template: minami
           front_page: README.md
