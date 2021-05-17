@@ -6,7 +6,12 @@ export default class Game {
     this.player = Math.random() < 0.5 ? this.p1 : this.p2
     this.sym = 'X'
   }
-
+  
+  /**
+   * This is a test of JSDocs documentation generation. This function changes the game board at a given row,column.
+   * @param {int} row - The row number on the board
+   * @param {int} col - The column number on the board
+   */
   turn (row, col) {
     col = col || row
     this.board[row][col] = this.sym
