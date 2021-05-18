@@ -24,3 +24,6 @@ jobs:
       
       - name: Documentation result
         run: ls ./docs
+
+      - name: Commit and push result
+        run: echo ${{ github.ref }}
