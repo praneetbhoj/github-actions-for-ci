@@ -19,7 +19,6 @@ jobs:
           source_dir: ./src
           recurse: true
           output_dir: ./docs
-          template: minami
           front_page: README.md
       
       - name: Documentation result
