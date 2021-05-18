@@ -19,6 +19,10 @@ jobs:
           input: ./src
           output: ./docs
           format: md
+          projectName: Team 10 Bullet Journal
+          projectVersion: 1
+          projectDescription: bullet journal created using Agile princples for CSE 110
+          projectHomepage: ./README.md
       
       - name: Documentation result
         run: ls ./docs
