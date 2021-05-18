@@ -24,4 +24,4 @@ jobs:
           front_page: README.md
       
       - name: Documentation result
-        run: echo "The result of jsdoc action was ${{ steps.gen-jsdoc.outputs.result }}"
+        run: ls ./docs
