@@ -28,7 +28,7 @@ jobs:
       - name: Convert html to markdown
         uses: docker://pandoc/core:2.9
         with:
-          args: "-f html -t markdown ./docs/index.html > ./docs/doc.md"
+          args: "-f html -t gfm -o ./docs/doc.md ./docs/index.html"
 
       - name: Commit and push result
         run: |
