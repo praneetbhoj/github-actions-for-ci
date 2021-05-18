@@ -26,4 +26,4 @@ jobs:
         run: ls ./docs
 
       - name: Commit and push result
-        run: echo ${{ github.pusher }}
+        run: echo ${{ github.pusher.name }}
