@@ -24,6 +24,11 @@ jobs:
       
       - name: Documentation result
         run: ls ./docs
+        
+      - name: Convert html to markdown
+        uses: docker://pandoc/core:2.9
+        with:
+          args: "-f html -t markdown ./docs/index.html"
 
       - name: Commit and push result
         run: |
