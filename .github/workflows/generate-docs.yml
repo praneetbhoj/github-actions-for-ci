@@ -25,3 +25,9 @@ jobs:
       
       - name: Documentation result
         run: ls ./docs
+        
+      - name: Commit and push result
+        run: |
+          git add -A
+          git commit -m "automation: generated documentation"
+          git push
